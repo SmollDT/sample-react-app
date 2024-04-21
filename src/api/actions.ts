@@ -1,11 +1,11 @@
 import axios, { AxiosError } from "axios";
 
-const API_URL = "https://vigilant-xylophone-979gx5j9w7j4f7pvw-3000.app.github.dev/api/";
+const API_URL = "https://vigilant-xylophone-979gx5j9w7j4f7pvw-3000.app.github.dev/api";
 
 export const getAirplaneData = async (year: string): Promise<AirplaneData> => {
   return new Promise<AirplaneData>((resolve, reject) => {
     axios
-      .get(`${API_URL}/year/${year}`)
+      .get(`${API_URL}/airplane/${year}`)
       .then((res) => {
         resolve({
           height: res.data.height,
