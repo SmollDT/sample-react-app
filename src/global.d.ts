@@ -1,7 +1,6 @@
-interface WeatherData {
-  city: string;
-  temperature: number;
-  humidity: number;
-  wind: number;
-  rain: number;
+interface AirplaneData {
+  height: number;
+  width: number;
+  length: number;
+  max_speed: number;
 }
