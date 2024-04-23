@@ -8,6 +8,7 @@ export const getAirplaneData = async (year: string): Promise<AirplaneData> => {
       .get(`${API_URL}/airplane/${year}`)
       .then((res) => {
         resolve({
+          name: res.data.name,
           height: res.data.height,
           width: res.data.width,
           length: res.data.length,

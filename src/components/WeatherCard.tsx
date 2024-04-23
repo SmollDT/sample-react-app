@@ -82,7 +82,8 @@ const WeatherCard: React.FC = () => {
                 <TiWeatherDownpour className="w-36 h-36" />
               </div>
             )}
-            <p className="text-3xl font-bold">Height: {data.height}°C</p>
+            <p className="text-3xl font-bold">Name: {data.name}°C</p>
+            <p className="text-lg">Height: {data.height}°C</p>
             <p className="text-lg">Width: {data.width}%</p>
             <p className="text-lg">Length: {data.length} km/h</p>
             <p className="text-lg">Max-Speed: {data.max_speed} %</p>
