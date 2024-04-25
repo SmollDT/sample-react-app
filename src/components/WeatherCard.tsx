@@ -10,6 +10,8 @@ import {
 import { useState } from "react";
 import { TiWeatherDownpour, TiWeatherSunny } from "react-icons/ti";
 import { getAirplaneData } from "../api/actions";
+import { CiPaperplane } from "react-icons/ci";
+import { FaPaperPlane } from "react-icons/fa";
 
 const WeatherCard: React.FC = () => {
   const [data, setData] = useState<AirplaneData>();
@@ -72,21 +74,20 @@ const WeatherCard: React.FC = () => {
       {data ? (
         <CardBody>
           <div className="flex flex-col items-center">
-            <h1 className="text-3xl font-bold">{data.height}</h1>
             {data.height > 20 ? (
               <div>
-                <TiWeatherSunny className="w-36 h-36" />
+                <CiPaperplane className="w-36 h-36" />
               </div>
             ) : (
               <div>
-                <TiWeatherDownpour className="w-36 h-36" />
+                <FaPaperPlane className="w-36 h-36" />
               </div>
             )}
-            <p className="text-3xl font-bold">Name: {data.name}°C</p>
-            <p className="text-lg">Height: {data.height}°C</p>
-            <p className="text-lg">Width: {data.width}%</p>
-            <p className="text-lg">Length: {data.length} km/h</p>
-            <p className="text-lg">Max-Speed: {data.max_speed} %</p>
+            <p className="text-3xl font-bold">Name: {data.name}</p>
+            <p className="text-lg">Height: {data.height} Meters</p>
+            <p className="text-lg">Width: {data.width} Meters</p>
+            <p className="text-lg">Length: {data.length} Meters</p>
+            <p className="text-lg">Max-Speed: {data.max_speed} Km/h</p>
           </div>
         </CardBody>
       ) : (
