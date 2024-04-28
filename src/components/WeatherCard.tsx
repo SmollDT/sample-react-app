@@ -8,7 +8,7 @@ import {
   Button,
 } from "@nextui-org/react";
 import { useState } from "react";
-import { TiWeatherDownpour, TiWeatherSunny } from "react-icons/ti";
+// import { TiWeatherDownpour, TiWeatherSunny } from "react-icons/ti";
 import { getAirplaneData } from "../api/actions";
 import { CiPaperplane } from "react-icons/ci";
 import { FaPaperPlane } from "react-icons/fa";
