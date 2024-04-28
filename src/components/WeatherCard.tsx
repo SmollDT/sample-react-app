@@ -74,7 +74,7 @@ const WeatherCard: React.FC = () => {
       {data ? (
         <CardBody>
           <div className="flex flex-col items-center">
-            {data.height > 20 ? (
+            {data.height > 9000 ? (
               <div>
                 <CiPaperplane className="w-36 h-36" />
               </div>
